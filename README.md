@@ -5,20 +5,24 @@ Implementing A Rideshare App
 Steps To Run:-
 
 Assignment - 1:
+ ```
  - python setup_db.py
  - python rideshare.py
  - Run "python db_print.py" To see contents of the database
-
+```
 Assignment - 2:
+ ```
  - sudo docker-compose build
  - sudo docker-compose up
-
+```
 Assignment - 3:
-    1. Change the IP Addresses in Code to Coressponding IPs So that Cross-Container Requests Are Successful.
+```
+1. Change the IP Addresses in Code to Coressponding IPs So that Cross-Container Requests Are Successful.
         Current IP:
             Users: 52.3.109.219
             Rides: 54.164.213.19
             Load Balancer: cc-ass-3-678167101.us-east-1.elb.amazonaws.com
+ ```
 
     2. In Rides and Users folder (In their VMs):
         - sudo docker-compose build
