@@ -29,6 +29,7 @@ Assignment - 3:
         - sudo docker-compose up
 
 Final Project:
+```
     1. Change the IP Addresses in Code to Coressponding IPs So that Cross-Container Requests Are Successful.
         Current IP:
             Users: 52.3.109.219
@@ -45,6 +46,7 @@ Final Project:
         - sudo docker build -t worker ./worker
         - sudo python3 host.py #In another terminal
         - sudo docker-compose up
+```
 _________________________________________
 
 Project Setup:
