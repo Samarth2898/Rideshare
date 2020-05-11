@@ -1,4 +1,4 @@
-RideShare on AmazonAWS
+## RideShare on AmazonAWS
 During this semester for the cloud computing course, you will develop the backend for a
 cloud based RideShare application, that can be used to pool rides.
 The RideShare application allows the users to create a new ride if they are travelling from
