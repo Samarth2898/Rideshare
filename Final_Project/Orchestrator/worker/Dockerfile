@@ -1,0 +1,8 @@
+FROM python
+ADD . /app
+WORKDIR /app
+ENV TEAM_NAME=CC_0075_1359_1532_1549
+RUN pip install --upgrade pip
+RUN pip install -r requirements.txt
+RUN python setup_db.py
+CMD [ "sh", "-c", "sleep 1 && python -u worker.py" ]

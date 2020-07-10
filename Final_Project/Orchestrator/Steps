@@ -1,0 +1,6 @@
+sudo docker-compose build
+sudo docker build -t worker ./worker
+sudo python3 host.py #In another terminal
+sudo docker-compose up
+
+### sudo docker run --network project_default worker

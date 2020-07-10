@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  users:
+    image: users:latest
+    build: ./users
+    command: gunicorn users_app:app -w 3 -b 0.0.0.0:8080
+    restart: always
+    ports:
+      - "80:8080"
+    container_name: users
+    environment:
+      - TEAM_NAME=CC_0075_1359_1532_1549

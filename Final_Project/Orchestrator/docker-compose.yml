@@ -1,0 +1,30 @@
+version: "3"
+
+services:
+  orchestrator:
+    container_name: orchestrator
+    build: ./orch
+    image: orchestrator
+    depends_on:
+      - rabbitmq
+    command: sh -c "sleep 30 && python -u orch.py"
+    restart: always
+    ports:
+      - "80:80"
+    environment:
+      - TEAM_NAME=CC_0075_1359_1532_1549
+      
+  rabbitmq:
+    container_name: rabbitmq
+    hostname: rabbitmq
+    image: rabbitmq
+    ports:
+      - "5672:5672"
+  
+  zookeeper:
+    container_name: zookeeper
+    hostname: zookeeper
+    image: zookeeper
+    ports:
+      - "2181:2181"
+
