@@ -11,7 +11,8 @@ Assignment - 1:
  - Run "python db_print.py" To see contents of the database
 ```
 Assignment - 2:
- ```
+
+ ```console
  - sudo docker-compose build
  - sudo docker-compose up
 ```
